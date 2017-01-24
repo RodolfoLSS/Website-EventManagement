@@ -1,0 +1,15 @@
+﻿CREATE TABLE local(
+lid SERIAL NOT NULL,
+placeName VARCHAR(100) NOT NULL,
+address VARCHAR(200) NOT NULL,
+logradouro VARCHAR(100) NOT NULL,
+complemento VARCHAR(70) NOT NULL,
+bairro VARCHAR(30) NOT NULL,
+cep VARCHAR(10) NOT NULL,
+city VARCHAR(30) NOT NULL,
+state VARCHAR(20) NOT NULL,
+telephone VARCHAR(15),
+coordenates VARCHAR(40),
+CONSTRAINT pk_local PRIMARY KEY(lid),
+CONSTRAINT u_placeName UNIQUE(placeName)
+);
